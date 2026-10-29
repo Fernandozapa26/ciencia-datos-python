@@ -65,3 +65,52 @@ Incluye:
 - Caso integrador y preguntas analíticas.
 - Reflexión ética y bitácora de aprendizaje.
 - Capturas del ambiente de desarrollo.
+
+
+
+
+
+
+## Semana 3 - Perfilamiento y calidad de datos
+
+Durante la tercera semana se desarrolló un laboratorio práctico
+de perfilamiento, limpieza y validación de datos utilizando
+Python y Pandas.
+
+### Actividades realizadas
+
+- Carga y exploración de archivos CSV.
+- Identificación de valores faltantes.
+- Detección y tratamiento de duplicados exactos.
+- Identificación de documentos repetidos.
+- Conversión segura de tipos de datos.
+- Normalización de categorías.
+- Aplicación de reglas de calidad.
+- Tratamiento justificado de datos inválidos.
+- Exportación y verificación de resultados.
+- Documentación de decisiones de limpieza.
+
+### Resultados obtenidos
+
+- Registros originales: 20.
+- Duplicados exactos retirados: 1.
+- Registros preparados: 19.
+- Registros con incidencias: 7.
+- Incidencias detectadas: 10.
+
+### Archivos principales
+
+- `notebooks/semana_03_calidad_datos.ipynb`
+- `data/raw/seguimiento_academico_semana3_con_errores.csv`
+- `data/processed/seguimiento_academico_semana3_preparado.csv`
+- `outputs/reporte_incidencias_semana3.csv`
+- `outputs/duplicados_exactos_retirados.csv`
+- `docs/Ciencia_de_Datos_Semana_3_CON_EVIDENCIAS.docx`
+
+### Conclusión
+
+Se aplicaron técnicas de perfilamiento y calidad de datos,
+conservando la trazabilidad de las transformaciones.
+
+El conjunto preparado todavía contiene anomalías que requieren
+verificación antes de utilizarse en un sistema real.
