@@ -1,0 +1,4 @@
+﻿id_regla,campos_origen,campos_destino,regla,limitacion
+T01,nota_python + nota_datos,promedio_dos_notas,Promediar solo si ambas notas existen,Sin dato si falta una
+T02,"programa, ciudad","programa_limpio, ciudad_limpia",Normalizar texto con tabla de equivalencias,No inferir 'BELL0'
+T03,"documento, fecha, notas, asistencia",prioridad_revision,np.select con precedencia documentada,No clasifica personas

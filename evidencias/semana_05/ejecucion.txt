@@ -1,0 +1,70 @@
+Python 3.12.14 Pandas 2.2.3 NumPy 2.3.5
+Fuente: seguimiento_academico_semana3_preparado.csv | filas: 19
+Huella SHA-256: 2a7095c80905ff3a ...
+  documento  nota_python  nota_datos  asistencia
+0      1001          4.2         4.0        92.0
+1      1002          3.8         3.6        85.0
+2      1003          4.7         4.8        96.0
+Filas: 19
+Registros en conflicto: 2
+Actualizaciones posteriores al corte: 1
+  documento  numero_notas  promedio_dos_notas  brecha_asistencia_pp
+0      1001             2                4.10                  12.0
+1      1002             2                3.70                   5.0
+2      1003             2                4.75                  16.0
+3      1004             2                3.00                 -10.0
+4      1005             2                4.95                  18.0
+      ciudad ciudad_limpia
+10  medellín      Medellín
+11     BELL0         bell0
+12       NaN          <NA>
+13  Envigado      Envigado
+14    Itagui        Itagüí
+15  Medellín      Medellín
+16     Bello         Bello
+17  medellin      Medellín
+18  Medellín      Medellín
+      ciudad ciudad_limpia codigo_ciudad
+10  medellín      Medellín           MED
+11     BELL0         bell0           NaN
+12       NaN          <NA>           NaN
+13  Envigado      Envigado           ENV
+14    Itagui        Itagüí           ITA
+15  Medellín      Medellín           MED
+16     Bello         Bello           BEL
+17  medellin      Medellín           MED
+18  Medellín      Medellín           MED
+Categorías sin equivalencia: ['BELL0']
+estado_asistencia
+En/sobre umbral didáctico    14
+Sin dato                      3
+Bajo umbral didáctico         2
+Name: count, dtype: int64
+prioridad_revision
+Seguimiento habitual      8
+Datos insuficientes       4
+Prioridad alta            2
+Revisar identidad         2
+Revisar fecha de corte    1
+Fecha no verificable      1
+Prioridad preventiva      1
+Name: count, dtype: int64
+  documento                explicacion
+0      1001  Promedio disponible: 4.10
+1      1002  Promedio disponible: 3.70
+2      1003  Promedio disponible: 4.75
+Validaciones superadas
+                                  indicador  valor                                              universo  denominador  numerador fecha_corte
+                       Registros preparados  19.00                             Todas las filas recibidas           19       19.0  2026-10-18
+       Registros con identidad en conflicto   2.00                             Todas las filas recibidas           19        2.0  2026-10-18
+Registros aptos para el ejemplo de análisis  11.00 Sin conflicto, con fecha válida y variables completas           19       11.0  2026-10-18
+          Promedio de dos notas (base apta)   3.99                Solo registros aptos; no toda la ficha           11       43.9  2026-10-18
+Controles de exportación y fuente superados. SHA-256: 2a7095c80905ff3abbcbe6be05c356dccdd0bf2d15f30fc714dc08272e724a9d
+Productos exportados: semana5_seguimiento_transformado.csv semana5_indicadores.csv semana5_bitacora_transformaciones.csv
+Registros procesados: 19
+                           indicador  numerador  denominador  porcentaje
+   Completitud de notas y asistencia         14           19       73.68
+Registros con identidad en conflicto          2           19       10.53
+S4-01 verificado contra el CSV: filas fuente [5, 9]
+Ciudades pendientes: ['BELL0']
+Reto S5 OK: 19 filas, completitud 14/19; SHA256 fuente 2a7095c80905ff3abbcbe6be05c356dccdd0bf2d15f30fc714dc08272e724a9d

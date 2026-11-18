@@ -1,0 +1,6 @@
+﻿regla,origen,destino,criterio,limitacion
+R01,ciudad,ciudad_normalizada,strip + casefold + map,Desconocidos quedan sin mapear
+R02,ciudad_normalizada,ciudad_pendiente_revision,marcar valores sin equivalencia,No se infiere una ciudad
+R03,notas y asistencia,completas,tres valores presentes,No imputar nulos
+R04,dos notas,promedio_dos_notas,media aritmética solo con ambas,Nulos producen NaN
+R05,"identidad, ciudad, completitud, asistencia y notas",prioridad_revision,np.select en orden,Primera regla verdadera gana

@@ -1,0 +1,20 @@
+﻿fila_fuente,documento,nombre,programa,ficha,nota_python,nota_datos,asistencia,ciudad,fecha_actualizacion,programa_normalizado,ciudad_normalizada,ciudad_reporte,archivo_fuente,fecha_corte,ciudad_original,ciudad_pendiente_revision,notas_completas,promedio_dos_notas,conflicto_identidad,prioridad_revision
+2,1001,Ana,ADSO,287001,4.2,4.0,92.0,Medellín,2026-10-12,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,True,4.1,False,Sin alerta
+3,1002,Carlos,ADSO,287001,3.8,3.6,85.0,Bello,2026-10-11,ADSO,Bello,Bello,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Bello,False,True,3.7,False,Sin alerta
+4,1003,María,ADSO,287001,4.7,4.8,96.0,Itagüí,2026-10-12,ADSO,Itagüí,Itagüí,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Itagüí,False,True,4.75,False,Sin alerta
+5,1004,Luis,ADSO,287001,2.9,3.1,70.0,Medellín,2026-10-10,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,True,3.0,False,Revisión académica didáctica
+6,1005,Sofía,ADSO,287001,5.0,4.9,98.0,Envigado,2026-10-09,ADSO,Envigado,Envigado,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Envigado,False,True,4.95,False,Sin alerta
+7,1006,Andrés,adso,287001,3.5,3.8,80.0,Bello,2026-10-07,ADSO,Bello,Bello,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Bello,False,True,3.65,False,Sin alerta
+8,1007,Camila,ADSO,287001,4.0,4.1,88.0,Medellín,2026-10-06,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,True,4.05,True,Identidad contradictoria
+9,1008,Juan,ADSO,287001,3.2,3.0,75.0,Itagüí,2026-10-05,ADSO,Itagüí,Itagüí,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Itagüí,False,True,3.1,False,Revisión académica didáctica
+10,1009,Luisa,ADSO,287001,,4.4,95.0,Medellín,2026-10-01,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,False,,False,Datos incompletos
+11,1010,Diego,ADSO,287001,3.1,,,Bello,2026-10-02,ADSO,Bello,Bello,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Bello,False,False,,False,Datos incompletos
+12,1011,Nidia,ADSO,287001,,4.0,,medellín,2026-10-04,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,medellín,False,False,,False,Datos incompletos
+13,1012,Sara,ADSO,287001,,3.9,,BELL0,2026-10-03,ADSO,,No reportada,seguimiento_academico_semana3_con_errores.csv,2026-10-18,BELL0,True,False,,False,Ciudad sin equivalencia
+14,1013,Pedro,Ciencia Datos Python,287001,4.5,4.0,93.0,,2026-10-02,Ciencia de datos con Python,,No reportada,seguimiento_academico_semana3_con_errores.csv,2026-10-18,,False,True,4.25,False,Sin alerta
+15,1014,Olga,ADSO,287001,4.1,4.2,91.0,Envigado,2026-11-01,ADSO,Envigado,Envigado,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Envigado,False,True,4.15,False,Sin alerta
+16,1015,Erika,Ciencia de datos con Python,287001,,3.0,85.0,Itagui,,Ciencia de datos con Python,Itagüí,Itagüí,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Itagui,False,False,,False,Datos incompletos
+17,1016,Mateo,ADSO,287001,3.6,3.3,81.0,Medellín,2026-08-01,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,True,3.45,False,Revisión académica didáctica
+18,1017,,ADSO,287001,4.0,4.5,82.0,Bello,2026-10-09,ADSO,Bello,Bello,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Bello,False,True,4.25,False,Sin alerta
+19,1018,Lucía,ADSO,287001,4.6,4.8,88.0,medellin,2026-10-08,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,medellin,False,True,4.699999999999999,False,Sin alerta
+21,1007,Camila,ADSO,287001,4.2,4.1,88.0,Medellín,2026-10-06,ADSO,Medellín,Medellín,seguimiento_academico_semana3_con_errores.csv,2026-10-18,Medellín,False,True,4.15,True,Identidad contradictoria

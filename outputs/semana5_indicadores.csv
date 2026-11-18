@@ -1,0 +1,5 @@
+﻿indicador,valor,universo,denominador,numerador,fecha_corte
+Registros preparados,19.0,Todas las filas recibidas,19,19.0,2026-10-18
+Registros con identidad en conflicto,2.0,Todas las filas recibidas,19,2.0,2026-10-18
+Registros aptos para el ejemplo de análisis,11.0,"Sin conflicto, con fecha válida y variables completas",19,11.0,2026-10-18
+Promedio de dos notas (base apta),3.99,Solo registros aptos; no toda la ficha,11,43.900000000000006,2026-10-18

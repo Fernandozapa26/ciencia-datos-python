@@ -114,3 +114,12 @@ conservando la trazabilidad de las transformaciones.
 
 El conjunto preparado todavía contiene anomalías que requieren
 verificación antes de utilizarse en un sistema real.
+
+## Semana 5 · Transformación y cierre del bloque 1
+
+El [informe de cierre](docs/Semana_5_Cierre_Bloque_1.md) reúne el diccionario, los resultados, el cuestionario y la sustentación. El caso usa datos ficticios y conserva la fuente preparada de Semana 3.
+
+- Abra `notebooks/Laboratorio_Semana_05_Transformacion_Cierre_Bloque1.ipynb` y ejecute todas las celdas desde la raíz del proyecto o desde `notebooks`. El laboratorio exporta el CSV transformado, los indicadores y la bitácora.
+- Ejecute `python -m app.reto_semana5` desde la raíz para reproducir el reto y comparar el filtro S4-01 con el CSV versionado.
+- Ejecute `python -m app.analisis` para volver a generar los dos CSV usados por la integración con MongoDB.
+- Consulte el [registro de ejecución](evidencias/semana_05/ejecucion.txt). Esta revisión se ejecutó con Python 3.12.14, Pandas 2.2.3 y NumPy 2.3.5, en un entorno ya disponible. La instalación limpia desde `requirements.txt` queda por comprobar.

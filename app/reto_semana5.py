@@ -14,7 +14,7 @@ def ejecutar():
     df = pd.read_csv(fuente, encoding='utf-8-sig')
     original = df.copy(deep=True)
     ciudades = df['ciudad'].astype('string').str.strip().str.casefold()
-    equivalencias = {'medellín': 'Medellín', 'medellin': 'Medellín', 'bello': 'Bello', 'itagüí': 'Itagüí', 'itagui': 'Itagüí'}
+    equivalencias = {'medellín': 'Medellín', 'medellin': 'Medellín', 'bello': 'Bello', 'itagüí': 'Itagüí', 'itagui': 'Itagüí', 'envigado': 'Envigado'}
     df['ciudad_original'] = df['ciudad']
     df['ciudad_normalizada'] = ciudades.map(equivalencias)
     df['ciudad_pendiente_revision'] = ciudades.notna() & df['ciudad_normalizada'].isna()
@@ -32,9 +32,20 @@ def ejecutar():
     ], ['Identidad contradictoria', 'Ciudad sin equivalencia', 'Datos incompletos', 'Revisión académica didáctica'], default='Sin alerta')
     assert len(df) == len(original)
     assert df.loc[~df['notas_completas'], 'promedio_dos_notas'].isna().all()
-    antes = original.loc[(original['programa'].astype('string').str.strip().str.casefold()=='adso') & (pd.to_numeric(original['asistencia'],errors='coerce')<80),'documento'].tolist()
-    despues = df.loc[(df['programa'].astype('string').str.strip().str.casefold()=='adso') & (df['asistencia']<80),'documento'].tolist()
-    assert antes == despues
+    # Reproducir S4-01 y contrastarlo con la evidencia versionada.
+    def filtro_s4(datos):
+        documento = datos['documento']
+        elegible = documento.notna() & ~documento.duplicated(keep=False)
+        asistencia = pd.to_numeric(datos['asistencia'], errors='coerce')
+        return datos.loc[
+            elegible & datos['programa_normalizado'].eq('ADSO') & asistencia.lt(80),
+            'fila_fuente',
+        ].tolist()
+
+    referencia = pd.read_csv(destino / 'semana4_adso_asistencia_baja_validado.csv')
+    assert filtro_s4(original) == filtro_s4(df) == referencia['fila_fuente'].tolist()
+    print(f"S4-01 verificado contra el CSV: filas fuente {filtro_s4(df)}")
+    print("Ciudades pendientes:", df.loc[df['ciudad_pendiente_revision'], 'ciudad_original'].tolist())
     assert hashlib.sha256(fuente.read_bytes()).hexdigest() == huella
     df.to_csv(destino/'semana5_reto_autonomo.csv', index=False, encoding='utf-8-sig')
     pd.DataFrame([{'indicador':'Completitud notas y asistencia','numerador':int(completas.sum()),'denominador':len(df),'porcentaje':round(completas.mean()*100,2)}]).to_csv(destino/'semana5_reto_indicador.csv',index=False,encoding='utf-8-sig')
