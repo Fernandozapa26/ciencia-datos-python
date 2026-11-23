@@ -1,4 +1,4 @@
-
+# Ciencia de Datos con Python - Proyecto Integrador SENA
 # Ciencia de Datos con Python - Semana 1
 
 ## Descripción
@@ -115,11 +115,83 @@ conservando la trazabilidad de las transformaciones.
 El conjunto preparado todavía contiene anomalías que requieren
 verificación antes de utilizarse en un sistema real.
 
-## Semana 5 · Transformación y cierre del bloque 1
 
-El [informe de cierre](docs/Semana_5_Cierre_Bloque_1.md) reúne el diccionario, los resultados, el cuestionario y la sustentación. El caso usa datos ficticios y conserva la fuente preparada de Semana 3.
 
-- Abra `notebooks/Laboratorio_Semana_05_Transformacion_Cierre_Bloque1.ipynb` y ejecute todas las celdas desde la raíz del proyecto o desde `notebooks`. El laboratorio exporta el CSV transformado, los indicadores y la bitácora.
-- Ejecute `python -m app.reto_semana5` desde la raíz para reproducir el reto y comparar el filtro S4-01 con el CSV versionado.
-- Ejecute `python -m app.analisis` para volver a generar los dos CSV usados por la integración con MongoDB.
-- Consulte el [registro de ejecución](evidencias/semana_05/ejecucion.txt). Esta revisión se ejecutó con Python 3.12.14, Pandas 2.2.3 y NumPy 2.3.5, en un entorno ya disponible. La instalación limpia desde `requirements.txt` queda por comprobar.
+
+
+
+## Semana 6 - Agrupación, estadísticas e indicadores KPI
+
+Durante la Semana 6 se desarrolló un laboratorio de análisis estadístico utilizando Python y Pandas, dando continuidad a los datos académicos ficticios procesados durante la Semana 5.
+
+### Objetivo
+
+Aplicar técnicas de agrupación, agregación y análisis estadístico para obtener indicadores que permitan describir el comportamiento de los registros académicos, conservando la calidad, trazabilidad y limitaciones de los datos.
+
+### Actividades realizadas
+
+- Carga y validación del archivo procesado de la Semana 5.
+- Selección de registros aptos para el análisis.
+- Agrupación de datos mediante `groupby()`.
+- Cálculo de estadísticas utilizando `agg()`.
+- Análisis de frecuencias y porcentajes con `value_counts()`.
+- Construcción de tablas cruzadas con `crosstab()`.
+- Elaboración de tablas dinámicas mediante `pivot_table()`.
+- Cálculo de media, mediana, desviación estándar y rango.
+- Construcción y validación de indicadores KPI.
+- Desarrollo de los cuatro retos autónomos.
+- Exportación de resultados en formato CSV.
+
+### Resultados obtenidos
+
+| Indicador | Resultado |
+|---|---:|
+| Registros originales | 19 |
+| Registros aptos | 11 |
+| Registros excluidos | 8 |
+| Cobertura analítica | 57,89 % |
+| Media general de notas | 3,991 |
+| Mediana general | 4,100 |
+| Desviación estándar muestral | 0,664 |
+| Participación de prioridad alta | 18,18 % |
+| Registros con asistencia ≥ 80 % | 81,82 % |
+
+Los resultados corresponden únicamente a registros ficticios y se utilizan con fines académicos.
+
+### Retos autónomos
+
+**Reto A:** Agrupación de registros por ciudad para calcular cantidad, media y mediana.
+
+**Reto B:** Construcción de una tabla cruzada entre ciudad y prioridad de revisión, incluyendo porcentajes por ciudad.
+
+**Reto C:** Creación de un KPI adicional para calcular la proporción de registros aptos con asistencia igual o superior al 80 %.
+
+**Reto D:** Comparación de media y mediana entre los programas ADSO y Ciencia de Datos con Python, considerando las limitaciones de las muestras.
+
+### Archivos generados
+
+**Notebook:**
+
+`notebooks/Laboratorio_Semana_06_Agrupacion_KPI_Pandas (1).ipynb`
+
+**Resultados exportados:**
+
+- `outputs/semana6_agrupacion_programa.csv`
+- `outputs/semana6_crosstab.csv`
+- `outputs/semana6_tabla_dinamica.csv`
+- `outputs/semana6_kpis.csv`
+- `outputs/semana6_reto_c_kpi_asistencia.csv`
+
+### Metodología y limitaciones
+
+El análisis utilizó los 11 registros que cumplieron los criterios de calidad establecidos. Se conservaron las categorías de información faltante y se evitaron modificaciones al archivo original.
+
+La fecha de corte utilizada fue el 18 de octubre de 2026.
+
+Los umbrales de calificación y asistencia son supuestos didácticos y no corresponden a criterios oficiales del SENA.
+
+Las diferencias estadísticas identificadas no permiten establecer relaciones causales ni tomar decisiones individuales sobre los aprendices.
+
+### Conclusión
+
+La Semana 6 permitió fortalecer las habilidades de análisis de datos mediante el uso de herramientas estadísticas de Pandas. Se comprobó la importancia de validar los registros, definir correctamente los denominadores y documentar las limitaciones de los indicadores antes de interpretar sus resultados.
